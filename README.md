@@ -70,3 +70,12 @@ The time complexity for my approach is O(NlogN).
    ```bash
    mvn test
    ```
+
+## Test via Terminal
+
+```bash
+curl --location 'localhost:8080/counter' \
+--header 'Authorization: Basic dXNlcjpwYXNz' \
+--form 'file=@"/absolute_path_to_text_file"' \
+--form 'k="num_of_k"'
+```
